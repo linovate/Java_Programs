@@ -1,0 +1,180 @@
+---Build an auto with proper input file:---
+Feb 09, 2016 11:28:41 PM util.FileIO readFile
+INFO: Logging begins at the 1st try/catch in readFile() in FileIO class...
+Feb 09, 2016 11:28:41 PM util.FileIO readFile
+INFO: Done...
+-----Start printing right after buildAuto() an Automotive from a proper file-----
+
+Automotive Name : Ford Focus Wagon ZTW
+Automotive Base Price : 18445.0
+
+Option Set # 1:
+OptionSet Name : Color
+Fort Knox Gold Clearcoat Metallic: 0.0
+Liquid Grey Clearcoat Metallic: 0.0
+Infra-Red Clearcoat: 0.0
+Grabber Green Clearcoat Metallic: 0.0
+Sangria Red Clearcoat Metallic: 0.0
+French Blue Clearcoat Metallic: 0.0
+Twilight Blue Clearcoat Metallic: 0.0
+CD Silver Clearcoat Metallic: 0.0
+Pitch Black Clearcoat: 0.0
+Cloud 9 White Clearcoat: 0.0
+
+Option Set # 2:
+OptionSet Name : Transmission
+Automatic: 0.0
+Standard: -815.0
+
+Option Set # 3:
+OptionSet Name : Brake/Traction Control
+Standard: 0.0
+ABS: 400.0
+ABS with Advance Trac: 1625.0
+
+Option Set # 4:
+OptionSet Name : Side Impact Air Bags
+None: 0.0
+Selected: 350.0
+
+Option Set # 5:
+OptionSet Name : Power Moonroof
+None: 0.0
+Selected: 595.0
+
+
+About to updateOptionSetName:
+------After updateOptionSetName:
+Automotive Name : Ford Focus Wagon ZTW
+Automotive Base Price : 18445.0
+
+Option Set # 1:
+OptionSet Name : Color
+Fort Knox Gold Clearcoat Metallic: 0.0
+Liquid Grey Clearcoat Metallic: 0.0
+Infra-Red Clearcoat: 0.0
+Grabber Green Clearcoat Metallic: 0.0
+Sangria Red Clearcoat Metallic: 0.0
+French Blue Clearcoat Metallic: 0.0
+Twilight Blue Clearcoat Metallic: 0.0
+CD Silver Clearcoat Metallic: 0.0
+Pitch Black Clearcoat: 0.0
+Cloud 9 White Clearcoat: 0.0
+
+Option Set # 2:
+OptionSet Name : Transmission
+Automatic: 0.0
+Standard: -815.0
+
+Option Set # 3:
+OptionSet Name : Brake/Traction Control
+Standard: 0.0
+ABS: 400.0
+ABS with Advance Trac: 1625.0
+
+Option Set # 4:
+OptionSet Name : Side Impact Air Bags
+None: 0.0
+Selected: 350.0
+
+Option Set # 5:
+OptionSet Name : Power Moonrooves
+None: 0.0
+Selected: 595.0
+
+
+About to updateOptionPrice for Option "Fort Knox Gold Clearcoat Metallic":
+------After updateOptionPrice:
+Automotive Name : Ford Focus Wagon ZTW
+Automotive Base Price : 18445.0
+
+Option Set # 1:
+OptionSet Name : Color
+Fort Knox Gold Clearcoat Metallic: 168.0
+Liquid Grey Clearcoat Metallic: 0.0
+Infra-Red Clearcoat: 0.0
+Grabber Green Clearcoat Metallic: 0.0
+Sangria Red Clearcoat Metallic: 0.0
+French Blue Clearcoat Metallic: 0.0
+Twilight Blue Clearcoat Metallic: 0.0
+CD Silver Clearcoat Metallic: 0.0
+Pitch Black Clearcoat: 0.0
+Cloud 9 White Clearcoat: 0.0
+
+Option Set # 2:
+OptionSet Name : Transmission
+Automatic: 0.0
+Standard: -815.0
+
+Option Set # 3:
+OptionSet Name : Brake/Traction Control
+Standard: 0.0
+ABS: 400.0
+ABS with Advance Trac: 1625.0
+
+Option Set # 4:
+OptionSet Name : Side Impact Air Bags
+None: 0.0
+Selected: 350.0
+
+Option Set # 5:
+OptionSet Name : Power Moonrooves
+None: 0.0
+Selected: 595.0
+
+
+---Start testing files that doesn't contain Base Price:---
+Feb 09, 2016 11:28:41 PM util.FileIO readFile
+INFO: Logging begins at the 1st try/catch in readFile() in FileIO class...
+Feb 09, 2016 11:28:41 PM util.FileIO readFile
+SEVERE: empty String
+java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at sun.misc.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.lang.Float.parseFloat(Float.java:451)
+	at java.lang.Float.valueOf(Float.java:416)
+	at util.FileIO.readFile(FileIO.java:74)
+	at Adapter.ProxyAutomobile.buildAuto(ProxyAutomobile.java:21)
+	at driver.Driver.main(Driver.java:31)
+
+AutoException [errorno=2, errormsg=Base Price Invalid In Input File.]
+
+Base Price is Missing.
+-----Start printing right after buildAuto() an Automotive from improper file-----
+
+Automotive Name : Ford Focus Wagon ZTW
+Automotive Base Price : -9999999.0
+
+Option Set # 1:
+OptionSet Name : Color
+Fort Knox Gold Clearcoat Metallic: 0.0
+Liquid Grey Clearcoat Metallic: 0.0
+Infra-Red Clearcoat: 0.0
+Grabber Green Clearcoat Metallic: 0.0
+Sangria Red Clearcoat Metallic: 0.0
+French Blue Clearcoat Metallic: 0.0
+Twilight Blue Clearcoat Metallic: 0.0
+CD Silver Clearcoat Metallic: 0.0
+Pitch Black Clearcoat: 0.0
+Cloud 9 White Clearcoat: 0.0
+
+Option Set # 2:
+OptionSet Name : Transmission
+Automatic: 0.0
+Standard: -815.0
+
+Option Set # 3:
+OptionSet Name : Brake/Traction Control
+Standard: 0.0
+ABS: 400.0
+ABS with Advance Trac: 1625.0
+
+Option Set # 4:
+OptionSet Name : Side Impact Air Bags
+None: 0.0
+Selected: 350.0
+
+Option Set # 5:
+OptionSet Name : Power Moonroof
+None: 0.0
+Selected: 595.0

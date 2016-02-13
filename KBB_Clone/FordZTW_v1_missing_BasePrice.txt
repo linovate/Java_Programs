@@ -1,0 +1,25 @@
+Model Name:Ford Focus Wagon ZTW:Base Price::Number of OptionSets:5:Sizes of OptionSets:10:2:3:2:2
+*Option Set*:0:Color
+Fort Knox Gold Clearcoat Metallic:0
+Liquid Grey Clearcoat Metallic:0
+Infra-Red Clearcoat:0
+Grabber Green Clearcoat Metallic:0
+Sangria Red Clearcoat Metallic:0
+French Blue Clearcoat Metallic:0
+Twilight Blue Clearcoat Metallic:0
+CD Silver Clearcoat Metallic:0
+Pitch Black Clearcoat:0
+Cloud 9 White Clearcoat:0
+*Option Set*:1:Transmission
+Automatic:0
+Standard:-815
+*Option Set*:2:Brake/Traction Control
+Standard:0
+ABS:400
+ABS with Advance Trac:1625
+*Option Set*:3:Side Impact Air Bags
+None:0
+Selected:350
+*Option Set*:4:Power Moonroof
+None:0
+Selected:595
